@@ -1,0 +1,287 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F8F2EA;
+    color: #4B3025;
+}
+
+/* HEADER DAN LOGO */
+header {
+    background-color: #563B2D;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: fit-content;
+    max-width: 100%;
+    margin: auto;
+    padding: 12px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    background-color: #684936;
+}
+
+.logo-icon {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background-color: #EAD8C5;
+    border: 3px solid #C7A98D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 46px;
+    box-shadow: 0 3px 8px #352219;
+    transition: transform 0.4s;
+}
+
+.logo.aktif .logo-icon {
+    transform: rotate(20deg) scale(1.1);
+}
+
+.logo-text {
+    text-align: left;
+}
+
+.logo-text h1 {
+    font-family: Georgia, serif;
+    color: #F3E5D5;
+    font-size: 32px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.logo-text h2 {
+    color: #D8BBA0;
+    font-family: Georgia, serif;
+    font-size: 23px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.logo-text p {
+    color: #E5D0BB;
+    font-size: 11px;
+    margin-top: 7px;
+}
+
+.tagline {
+    color: #EAD8C5;
+    font-size: 13px;
+    margin-top: 18px;
+    letter-spacing: 1px;
+}
+
+/* NAVIGASI */
+nav {
+    background-color: #E5D0BB;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: #563B2D;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 12px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #A47758;
+}
+
+/* JUDUL KATALOG */
+main {
+    max-width: 1100px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+.judul {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.subjudul {
+    color: #A47758;
+    letter-spacing: 3px;
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+.judul h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.judul > p:last-child {
+    color: #80624E;
+    font-size: 14px;
+}
+
+/* PENCARIAN */
+#pencarian {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 25px;
+    padding: 13px 15px;
+    border: 1px solid #C7A98D;
+    border-radius: 8px;
+    background-color: #FFF9F3;
+    color: #4B3025;
+    outline: none;
+}
+
+#pencarian:focus {
+    border-color: #79553D;
+}
+
+/* 9 KOTAK PRODUK */
+.katalog {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.produk {
+    background-color: #EAD8C5;
+    border: 1px solid #D6BDA5;
+    border-radius: 12px;
+    padding: 13px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.produk:hover {
+    transform: translateY(-4px);
+}
+
+.produk img {
+    display: block;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.produk h3 {
+    font-size: 17px;
+    margin: 13px 0 8px;
+}
+
+.produk p {
+    color: #80624E;
+    font-size: 13px;
+    min-height: 30px;
+    margin-bottom: 10px;
+}
+
+.produk strong {
+    display: block;
+    color: #563B2D;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+/* TOMBOL */
+button {
+    background-color: #79553D;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 13px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #563B2D;
+}
+
+/* PESAN KETIKA PRODUK TIDAK DITEMUKAN */
+#tidakDitemukan {
+    text-align: center;
+    margin-top: 20px;
+    color: #79553D;
+}
+
+/* FOOTER */
+footer {
+    background-color: #563B2D;
+    color: #F3E5D5;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 40px;
+    line-height: 1.8;
+    font-size: 13px;
+}
+
+.footer-logo {
+    font-family: Georgia, serif;
+    font-size: 21px;
+    margin-bottom: 5px;
+}
+
+/* TAMPILAN HP DAN TABLET */
+@media (max-width: 700px) {
+    .katalog {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .produk img {
+        height: 160px;
+    }
+
+    .logo-text h1 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 450px) {
+    .katalog {
+        grid-template-columns: 1fr;
+    }
+
+    .logo-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 34px;
+    }
+
+    .logo-text h1 {
+        font-size: 21px;
+    }
+
+    .logo-text h2 {
+        font-size: 19px;
+    }
+
+    .logo-text p {
+        font-size: 10px;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 12px;
+    }
+}

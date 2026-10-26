@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soft Cookies by Fira</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- LOGO -->
+    <header>
+        <div class="logo" onclick="animasiLogo()">
+            <div class="logo-icon" id="logoIcon">🍪</div>
+            <div class="logo-text">
+                <h1>soft cookies</h1>
+                <h2>by fira</h2>
+                <p>♡ freshly baked with love ♡</p>
+            </div>
+        </div>
+
+        <p class="tagline" id="tagline">
+            Homemade cookies for your happy days
+        </p>
+    </header>
+
+    <!-- NAVIGASI -->
+    <nav>
+        <a href="#beranda">Beranda</a>
+        <a href="#katalog">Katalog</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+
+    <!-- KATALOG -->
+    <main id="beranda">
+        <section class="judul" id="katalog">
+            <p class="subjudul">MADE WITH LOVE</p>
+            <h2>Our Soft Cookies</h2>
+            <p>Pilih cookies favoritmu dari Soft Cookies by Fira.</p>
+        </section>
+
+        <input
+            type="text"
+            id="pencarian"
+            placeholder="Cari cookies favoritmu..."
+        >
+
+        <div class="katalog" id="daftarProduk">
+
+            <div class="produk" data-nama="classic chocolate chip">
+                <img src="img/Endorphins green tea latte cookies.jpg">
+                <h3>Endorphins green tea latte cookies</h3>
+                <p>Cookies lembut dengan rasa green tea didalamnya yang lumer.</p>
+                <strong>Rp18.000</strong>
+                <button onclick="pesan('Classic Chocolate Chip')">Pesan Sekarang</button>
+            </div>
+
+            <div class="produk" data-nama="double chocolate">
+                <img src="img/Endorphins lotus biscoff cookies.jpg">
+                <h3>Endorphins lotus biscoff cookies</h3>
+                <p>Cookies lembut didalam dan renyah diluar.</p>
+                <strong>Rp20.500</strong>
+                <button onclick="pesan('Double Chocolate')">Pesan Sekarang</button>
+            </div>
+
+            <div class="produk" data-nama="red velvet">
+                <img src="img/Endorphins red velvet nutella molten cookies.jpg">
+                <h3>Endorphins red velvet nutella molten cookies</h3>
+                <p>Cookies manis dengan warna merah coklat didalam.</p>
+                <strong>Rp18.000</strong>
+                <button onclick="pesan('Red Velvet')">Pesan Sekarang</button>
+            </div>
+
+            <div class="produk" data-nama="matcha cookies">
+                <img src="img/Good time classic choo chip.jpg">
+                <h3>Good time classic choo chip</h3>
+                <p>Cookies gurih dengan classic topping diatasnya.</p>
+                <strong>Rp15.000</strong>
+                <button onclick="pesan('Matcha Cookies')">Pesan Sekarang</button>
+            </div>
+
+            <div class="produk" data-nama="oreo cookies">
+                <img src="img/Good time double choco.jpg">
+                <h3>Good time double choco</h3>
+                <p>Cookies dengan double choco yang pekat.</p>
+                <strong>Rp18.000</strong>
+                <button onclick="pesan('Oreo Cookies')">Pesan Sekarang</button>
+            </div>
+
+            <div class="produk" data-nama="brownie cookies">
+                <img src="img/Good time rainbow choco chip.jpg">
+                <h3>Good time rainbow choco chip</h3>
+                <p>Cookies dengan perpaduan rainbow choco chip diatasnya.</p>
+                <strong>Rp18.000</strong>
+                <button onclick="pesan('Brownie Cookies')">Pesan Sekarang</button>
+            </div>
+
+            <div class="produk" data-nama="peanut butter">
+                <img src="img/Tropicana skim korean goguma cookies.jpg">
+                <h3>Tropicana slim korean goguma cookies</h3>
+                <p>Cookies dengan rasa manis dari ubi yang sangat lembut.</p>
+                <strong>Rp17.000</strong>
+                <button onclick="pesan('Peanut Butter')">Pesan Sekarang</button>
+            </div>
+
+            <div class="produk" data-nama="oatmeal raisin">
+                <img src="img/Tropicana slim korean garlic butter cookies.jpg">
+                <h3>Tropicana slim korean garlic butter cookies</h3>
+                <p>Cookies dengan perpaduan rasa bawang yang sangat amat gurih dan renyah.</p>
+                <strong>Rp18.000</strong>
+                <button onclick="pesan('Oatmeal Raisin')">Pesan Sekarang</button>
+            </div>
+
+            <div class="produk" data-nama="choco marshmallow">
+                <img src="img/Tropicana slim nutty chocolate cookies.jpg">
+                <h3>Tropicana slim nutty chocolate cookies</h3>
+                <p>Coklat lembut dengan rasa nutty coklat yang sangat lezat.</p>
+                <strong>Rp19.000</strong>
+                <button onclick="pesan('Choco Marshmallow')">Pesan Sekarang</button>
+            </div>
+
+        </div>
+
+        <p id="tidakDitemukan" hidden>
+            Cookies tidak ditemukan.
+        </p>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="kontak">
+        <div class="footer-logo">🍪 soft cookies by fira</div>
+        <p>Freshly baked, specially for you ♡</p>
+        <p>Terima kasih sudah berkunjung!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
